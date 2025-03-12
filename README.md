@@ -1,4 +1,4 @@
-#Art Commission Information Website
+# Art Commission Information Website
 A Deakin univeristy website building project focusing on integrating SQLite with HTML 
 
 ## Overview
