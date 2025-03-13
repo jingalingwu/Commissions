@@ -15,4 +15,6 @@ The site allows users to view the art portfolio, see commission pricing and type
 - **SQLite**: A lightweight, serverless database used to store and manage contact form submissions.
 - **HTML/CSS**: Front-end design and layout.
 - **JavaScript**: Interactivity for front-end features, like form handling and dynamic content.
+- **Bootstrap**: For layout and design
+
 
