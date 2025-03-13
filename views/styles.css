@@ -1,0 +1,291 @@
+@charset "UTF-8";
+h1{
+    
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+h2{
+    
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+li {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+}
+
+.cta {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(200, 171, 209, 0.85);
+  z-index: -1;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+.divider{
+  width: 100%;
+  height: 6rem;
+  border-width: 1px 0;
+  
+}
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+}
+
+p  {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+
+.bg-faded {
+  background-color: #e2e2e2;
+}
+
+.bg-colour {
+  background-color: #f8efff;
+
+}
+
+
+
+.social{
+
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--bg-colour);
+}
+
+.social a{
+  font-size: 25px;
+  color: var(--bg-colour);
+  border: 2px solid var(--bg-colour);
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social a:hover{
+  transform: scale(1.2) translateY(-5px);
+  background: var(--bg-colour);
+  color: var(--main);
+}
+
+.intro {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+
+  
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+ /* Modal backdrop - solid black background */
+ .modal-backdrop.show {
+  background-color: black !important;
+  opacity: 0.75 !important;
+}
+
+/* Center the modal content and make it 90% of the screen */
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Make the image inside the modal 90% of the screen */
+.modal-body img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Transparent modal content */
+.modal-fullscreen .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+/* Hover effect for images in the gallery */
+.gallery-item img {
+  transition: transform 0.4s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+
+ /* Modal backdrop - solid black background */
+ .modal-backdrop.show {
+  background-color: black !important;
+  opacity: 0.75 !important;
+}
+
+/* Center the modal content and make it 90% of the screen */
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Make the image inside the modal 90% of the screen */
+.modal-body img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Transparent modal content */
+.modal-fullscreen .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+/* Text box with grey background */
+.gallery-text-box {
+  background-color: #f0f0f0;  /* light grey background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+   /* Container styling */
+   .iphone-container {
+    position: relative;
+    height: 1000px; /* Fixed height for the gallery */
+    overflow: hidden; /* Hide overflowing images */
+  }
+
+  /* Gallery item setup - initial positioning */
+  .iphone-item {
+    position: absolute;
+    top: 0;
+    width: 16.66%; /* 6 images in a row, each 1/6th of the total width */
+    height: 100%; /* Fill the height */
+    transition: all 0.5s ease;
+  }
+
+  /* Position each image next to each other */
+  .iphone-item:nth-child(1) { left: 0; }
+  .iphone-item:nth-child(2) { left: 16.66%; }
+  .iphone-item:nth-child(3) { left: 33.33%; }
+  .iphone-item:nth-child(4) { left: 50%; }
+  .iphone-item:nth-child(5) { left: 66.66%; }
+  .iphone-item:nth-child(6) { left: 83.33%; }
+
+  /* Image styling - fill each item */
+  .iphone-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keep the image proportions within the container */
+    transition: transform 0.5s ease, width 0.5s ease;
+  }
+
+  /* General hover effect for images */
+  .iphone-item:hover {
+    z-index: 10; /* Bring the hovered image on top */
+  }
+
+  /* Expand the image to maintain full height and adjust width to scale */
+  .iphone-item:hover img {
+    height: 100%; /* Keep the full height of the gallery */
+    width: auto; /* Adjust the width proportionally to maintain aspect ratio */
+    transform: scale(1.01); /* Slight zoom effect */
+  }
+
+  /* Adjust the transform-origin for the last two images to prevent them from getting cut off */
+  .iphone-item:nth-child(5):hover img,
+  .iphone-item:nth-child(6):hover img {
+    transform-origin: right center; /* Make the image expand from the right side */
+    
+  }
+
+  .guidebox{
+    background-color: #f9f9f9;
+        padding: 40px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+  }

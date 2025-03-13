@@ -1,0 +1,53 @@
+<%- include('header'); -%>
+
+<hr>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top">
+   <ul class="navbar-nav justify-content-center">
+       <li class="nav-item"><a href="/" class="nav-link ">Home</a></li>
+       <li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>
+       <li class="nav-item"><a href="/guide" class="nav-link">Commission Guide</a></li>
+       <li class="nav-item"><a href="/price" class="nav-link">Commission Price</a></li>
+       <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+     </ul>
+</nav>
+<hr>
+
+<body>
+    <div class="container mt-5">
+        <h2>All Requests</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Number</th>
+                    <th>Email</th>
+                    <th>Commission Type</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% requests.forEach(request => { %>
+                    <tr>
+                        <td><%= request.id %></td>
+                        <td><%= request.firstname %></td>
+                        <td><%= request.lastname %></td>
+                        <td><%= request.number %></td>
+                        <td><%= request.email %></td>
+                        <td><%= request.commissionType %></td>
+                        <td><%= request.comment %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/contact" class="btn btn-primary">Back to Form</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<br>
+<br>
+<%- include('footer'); -%>

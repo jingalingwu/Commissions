@@ -1,0 +1,73 @@
+<%- include('header'); -%>
+
+ <hr>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top">
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item"><a href="/" class="nav-link ">Home</a></li>
+            <li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="/guide" class="nav-link">Commission Guide</a></li>
+            <li class="nav-item"><a href="/price" class="nav-link">Commission Price</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+          </ul>
+    </nav>
+    <hr>
+
+<body>
+    <div class="container mt-5">
+        <h2>Commission Request Form</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="number">Number</label>
+                <input type="tel" class="form-control" id="number" name="number" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="commissionType">Commission Type</label>
+                <select class="form-control" id="commissionType" name="commissionType" required>
+                    <option value="" disabled selected>Select a commission type</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="iphone_wallpaper">iPhone Wallpaper</option>
+                    <option value="desktop_wallpaper">Desktop Wallpaper</option>
+                    <option value="character_design">Character Design</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+        </form>
+        
+        
+        <br>
+        <br>
+        <a href="/requests" class="btn btn-secondary">View Everyone's Requests</a>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<%- include('footer'); -%>
